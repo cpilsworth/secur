@@ -6,9 +6,47 @@ footer {
 
 footer .footer {
   max-width: 1200px;
-  margin: auto;
+  margin: auto;  
+}
+
+footer .footer div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: baseline;
 }
 
 footer .footer p {
   margin: 0;
+  color: #c1c1c1;
+  font-size: 12px;
+}
+
+footer .footer ul {
+  width: 100%;
+  list-style-type: none;
+  display: inline;
+  text-align: right;
+}
+
+footer .footer ul li {
+  display: inline;
+  margin-right: 1rem;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+@media (min-width: 701px) {
+  footer .footer p {
+    max-width: 360px;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  footer .footer ul {
+    display: none;
+  }
 }
