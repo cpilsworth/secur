@@ -148,7 +148,7 @@ header .nav-brand {
 }
 
 header nav .nav-brand img {
-  width: 128px;
+  width: 145px;
   height: auto;
 }
 
@@ -172,10 +172,13 @@ header nav .nav-sections ul  {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
+  color: var(--header-text-color);
+  justify-content: center;
 }
 
 header nav .nav-sections ul > li {
   font-weight: 700;
+  margin: 0.5rem 3rem;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -195,6 +198,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav[aria-expanded="true"] .nav-sections {
     align-self: unset;
+    margin: 1rem auto;
   }
 
   header nav .nav-sections .nav-drop {
@@ -267,6 +271,15 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections > ul > li > ul > li {
     padding: 8px 0;
   }
+
+  header nav .nav-tools a {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 24px;
+    background-color: var(--button-color);
+    border-radius: 50px;
+  }
+  
 }
 
 /* tools */
