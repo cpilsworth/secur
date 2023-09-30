@@ -21,11 +21,15 @@ const LCP_BLOCKS = []; // add your LCP blocks to the list
  */
 function buildHeroBlock(main) {
   const h1 = main.querySelector('h1');
+  const p = h1.nextElementSibling; // expects a p element after the h1
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
   if (h1 && picture && (h1.compareDocumentPosition(picture) & Node.DOCUMENT_POSITION_PRECEDING)) {
     const section = document.createElement('div');
-    section.append(buildBlock('hero', { elems: [picture, h1] }));
+    const content = document.createElement('div');
+    content.classList.add('hero-content');
+    content.append(h1, p);
+    section.append(buildBlock('hero', { elems: [picture, content] }));
     main.prepend(section);
   }
 }
