@@ -4,6 +4,10 @@ export default function decorate(block) {
 
   // setup image columns
   [...block.children].forEach((row) => {
+    row.classList.add('columns-row');   
+    let content = document.createElement('div');
+    content.classList.add('row-content');
+    
     [...row.children].forEach((col) => {
       const pic = col.querySelector('picture');
       if (pic) {
@@ -14,5 +18,8 @@ export default function decorate(block) {
         }
       }
     });
+
+    content.append(...row.children);
+    row.appendChild(content);
   });
 }
