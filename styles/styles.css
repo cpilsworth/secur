@@ -17,10 +17,12 @@
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
-  --text-color: #000;
+  --button-color: #cbe7f0;
+  --text-color: #2c2c2c;
+  --header-text-color: #818a96;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: adobe-clean, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
