@@ -12,10 +12,11 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-button-color: #cbe7f0;
+  --link-color: #2c2c2c
   --link-hover-color: #136ff6;
   --background-color: #fff;
-  --overlay-background-color: #eee;
+  --overlay-background-color: #fff;
   --highlight-background-color: #ccc;
   --button-color: #cbe7f0;
   --text-color: #2c2c2c;
@@ -24,7 +25,7 @@
   /* fonts */
   --body-font-family: adobe-clean, sans-serif;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --fixed-font-family:  menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -43,14 +44,6 @@
   --nav-height: 64px;
 
 }
-
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 100.06%;
-  ascent-override: 95%;
-  src: local('Arial');
-}
-
 
 @media (min-width: 900px) {
   :root {
@@ -153,8 +146,8 @@ a.button:any-link, button {
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
-  background-color: var(--link-color);
+  color: var(--link-color);
+  background-color: var(--link-button-color);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
@@ -163,7 +156,7 @@ a.button:any-link, button {
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
+  filter: brightness(1.15);
   cursor: pointer;
 }
 
@@ -231,8 +224,19 @@ main img {
 }
 
 main .section {
-  padding: 64px 16px;
+  padding: 0 16px;
 }
+
+main .section.no-padding {
+  padding: 0;
+}
+
+main .section.full-width > div {
+  max-width: unset;
+  margin: unset
+}
+
+
 
 @media (min-width: 600px) {
   main .section {
@@ -251,3 +255,5 @@ main .section {
 main .section.highlight {
   background-color: var(--highlight-background-color);
 }
+
+
