@@ -40,6 +40,7 @@ header nav[aria-expanded="true"] {
   header nav {
     display: flex;
     justify-content: space-between;
+    height: 88px;
   }
 
   header nav[aria-expanded="true"] {
@@ -277,7 +278,7 @@ header nav .nav-sections ul > li > ul > li {
     font-weight: 700;
     padding: 10px 24px;
     background-color: var(--button-color);
-    border-radius: 50px;
+    border-radius: 15px;
   }
   
 }
