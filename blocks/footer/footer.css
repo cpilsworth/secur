@@ -38,6 +38,11 @@ footer .footer ul li {
   font-weight: 600;
 }
 
+footer img {
+  width: 145px;
+  height: auto;
+}
+
 @media (min-width: 701px) {
   footer .footer p {
     max-width: 360px;
