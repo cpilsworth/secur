@@ -256,4 +256,7 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
+div.default-content-wrapper > p {
+  margin: 0;
+}
 
