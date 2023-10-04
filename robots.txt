@@ -1,9 +1,3 @@
-Edit
-Generate Experiment
-Live
-
-
-
 # Helix robots.txt FAQ
 #
 # Q: This looks like a default robots.txt, how can I provide my own?
