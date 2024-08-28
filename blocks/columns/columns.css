@@ -47,7 +47,7 @@
 
 .columns.first-dark .columns-row:first-child h2,
 .columns.first-dark .columns-row:first-child ul li {
-  color: #fff;  
+  color: var(--light-text-color);  
 }
 
 .columns.first-dark .columns-row:first-child p {
@@ -55,7 +55,7 @@
 }
 
 .columns.first-dark .columns-row:first-child p a.button {
-  color: #fff;
+  color: var(--light-text-color);
   background-color: #02828f;
 }
 
