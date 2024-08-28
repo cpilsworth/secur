@@ -22,8 +22,8 @@
   --overlay-background-color: #fff;
   --highlight-background-color: #ccc;
   --button-color: #cbe7f0;
-  --text-color: black;
-  --light-text-color: white;
+  --text-color: var(--brat-green);
+  --light-text-color: var(--brat-green);
 
   /* fonts */
   --body-font-family: adobe-clean, sans-serif;
