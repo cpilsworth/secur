@@ -11,9 +11,9 @@
  */
 
  :root {
-
   --barbie-pink: #e0218a;
   --brat-green: #8ace00;  
+  
   /* colors */
   --link-button-color: #cbe7f0;
   --link-color: #2c2c2c
@@ -22,8 +22,8 @@
   --overlay-background-color: #fff;
   --highlight-background-color: #ccc;
   --button-color: #cbe7f0;
-  --text-color: var(--brat-green);
-  --light-text-color: var(--brat-green);
+  --text-color: black; 
+  --light-text-color: black;
 
   /* fonts */
   --body-font-family: adobe-clean, sans-serif;
